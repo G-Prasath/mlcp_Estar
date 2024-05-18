@@ -13,7 +13,7 @@ import FloatingButtons from "./FloatingCallButton";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-footer_bg">
+      <div className="bg-footer_bg px-[5%]">
         <div className="container mx-auto max-md:mx-0 px-4 pb-10">
           <div className="max-md:mb-4 w-[100px]">
             <img

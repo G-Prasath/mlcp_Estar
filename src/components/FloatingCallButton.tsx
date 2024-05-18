@@ -2,7 +2,7 @@ import React from "react";
 
 const FloatingButtons = () => {
   return (
-    <div className="fixed bottom-10 right-5 z-10">
+    <div className="fixed bottom-20 right-2 z-10">
       <a
         href="https://api.whatsapp.com/send?phone=1234567890"
         className="block w-8  bg-green-500 rounded-full  items-center justify-center mb-4  shadow-md hover:bg-green-600"
