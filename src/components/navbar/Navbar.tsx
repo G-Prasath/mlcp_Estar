@@ -74,7 +74,7 @@ const Navbar = () => {
               </li>
 
               <li>
-                <a href="#" className="nav__link">
+                <a href="/gallery" className="nav__link">
                   Our Gallery
                 </a>
               </li>

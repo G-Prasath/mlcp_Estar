@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Gallery = lazy(() => import("./pages/Gallery"));
 
 const Twopost = lazy(() => import("./pages/TwoPost"));
 const Fourpost = lazy(() => import("./pages/Fourpost"));
@@ -43,6 +44,7 @@ function App() {
           <Route path="/asrs" element={<ASRS />} />
           <Route path="/carelevator" element={<Carelvator />} />
 
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<NotFound />} /> {/* 404 Route */}
         </Routes>
