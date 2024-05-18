@@ -5,6 +5,7 @@ import Gallery_Card from "./Gallery_Card";
 const Compltedproject = () => {
   return (
     <div className="sec-padding w-full">
+
       <div className="w-full flex flex-col justify-center items-center">
         <h1 className="text-center uppercase text-3xl max-md:text-2xl font-[700]">
           Completed Projects
@@ -40,6 +41,7 @@ const Compltedproject = () => {
           ))}
         </div>
       </div>
+
     </div>
   );
 };

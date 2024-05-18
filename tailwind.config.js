@@ -26,8 +26,8 @@ export default {
     },
     extend: {
       boxShadow: {
-        custom:
-          "rgba(21, 68, 171, 0.1) 0px 7px 29px 0px",
+        custom:"rgba(21, 68, 171, 0.1) 0px 7px 29px 0px",
+        imgShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
       },
       backgroundImage: {
         'about_bg' : "linear-gradient(rgba(255, 255, 255,.8), rgba(255, 255, 255,.8)), url('/about_bg.jpg')"
