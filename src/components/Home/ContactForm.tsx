@@ -144,6 +144,7 @@ const ContactForm = () => {
             </div>
           </div>
         </form>
+        
       </div>
       <div className="w-full max-md:mb-10">
         <LazyLoadImage className="rounded-3xl max-lg:mt-20" src="/contact.webp" alt="Contact" effect="blur" />

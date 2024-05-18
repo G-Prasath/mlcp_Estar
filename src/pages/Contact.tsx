@@ -1,8 +1,13 @@
 import React from 'react'
+import Banner from '../components/Contact/Banner'
+import Form from "../components/Contact/Form"
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <Banner/>
+      <Form/>
+    </>
   )
 }
 
