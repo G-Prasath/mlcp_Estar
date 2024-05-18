@@ -174,10 +174,15 @@ const Form = () => {
         </div>
 
         <div className="bg-light_white p-5 mt-5 flex max-lg:flex-col max-lg:py-10 rounded-b-lg">
-
           <div className="w-1/5 max-lg:w-full max-lg:mb-5">
-            <div className="imgs w-[300px] max-lg:w-full">
-              <img src="/location.jpg" alt="laction - img" className="w-full" />
+            <div className="imgs w-[300px] max-lg:w-full rounded-lg">
+              <a href="#">
+                <img
+                  src="/location.jpg"
+                  alt="laction - img"
+                  className="w-full rounded-lg "
+                />
+              </a>
             </div>
           </div>
 
@@ -186,20 +191,22 @@ const Form = () => {
               Our Location
             </h6>
             <div className="flex items-center gap-10 justify-center">
-              <img src="/map-icon.png" alt="icon" className="w-[50px]" />
+              <img src="/map-icon.png" alt="icon" className="w-[50px] max-sm:hidden" />
               <div>
                 <p className="mb-3">
                   Periya Koladi Rd, Konrajakuppam, Ayappakkam, Chennai-600 095
                   Tamil Nadu, India.
                 </p>
-                <a href="#" className="text-[blue] underline underline-offset-1">
+                <a
+                  href="#"
+                  className="text-[blue] underline underline-offset-1"
+                >
                   Periya Koladi Rd, Konrajakuppam, Ayappakkam, Chennai-600 095
                   Tamil Nadu, India.
                 </a>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </>
