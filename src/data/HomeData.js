@@ -1,10 +1,10 @@
 export const Navlinks = [
   {
-    name: "2 Post Hydraulic System",
+    name: "2 Post 1+1 Hydraulic System",
     link: "twopost",
   },
   {
-    name: "4 Post Hydraulic System",
+    name: "4 Post 1+1 Hydraulic System",
     link: "fourpost",
   },
   {

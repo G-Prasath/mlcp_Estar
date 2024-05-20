@@ -9,23 +9,37 @@ export const TwopostData = [
             "img" : "/card-img.jpg",
             "title" : "ROTARY CAR PARKING",
             "place" : "TANGAR",
-            "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam quos inventore quis reiciendis modi dignissimos repellat corrupti laudantium tenetur quam beatae voluptas dolores, nemo ipsa quo quidem saepe! Quidem quo ratione fugit amet eaque accusamus blanditiis beatae laboriosam laudantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, placeat."
+            "para" : {
+                "l1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "l2" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+                 "l3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                 "l4" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+            }
         },
         "card_2" : {
             "img" : "/card-img.jpg",
             "title" : "ROTARY CAR PARKING",
             "place" : "TANGAR",
-            "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam quos inventore quis reiciendis modi dignissimos repellat corrupti laudantium tenetur quam beatae voluptas dolores, nemo ipsa quo quidem saepe! Quidem quo ratione fugit amet eaque accusamus blanditiis beatae laboriosam laudantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, placeat."
+            "para" : {
+                "l1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "l2" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+                 "l3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                 "l4" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+            }
         },
         "card_3" : {
             "img" : "/card-img.jpg",
             "title" : "ROTARY CAR PARKING",
             "place" : "TANGAR",
-            "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam quos inventore quis reiciendis modi dignissimos repellat corrupti laudantium tenetur quam beatae voluptas dolores, nemo ipsa quo quidem saepe! Quidem quo ratione fugit amet eaque accusamus blanditiis beatae laboriosam laudantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, placeat."
+            "para" : {
+                "l1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "l2" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+                 "l3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                 "l4" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+            }
         }
     }
 ]
-
 
 export const FourpostData = [
     {
@@ -38,19 +52,34 @@ export const FourpostData = [
             "img" : "/card-img.jpg",
             "title" : "ROTARY CAR PARKING",
             "place" : "TANGAR",
-            "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam quos inventore quis reiciendis modi dignissimos repellat corrupti laudantium tenetur quam beatae voluptas dolores, nemo ipsa quo quidem saepe! Quidem quo ratione fugit amet eaque accusamus blanditiis beatae laboriosam laudantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, placeat."
+            "para" : {
+                "l1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "l2" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+                 "l3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                 "l4" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+            }
         },
         "card_2" : {
             "img" : "/card-img.jpg",
             "title" : "ROTARY CAR PARKING",
             "place" : "TANGAR",
-            "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam quos inventore quis reiciendis modi dignissimos repellat corrupti laudantium tenetur quam beatae voluptas dolores, nemo ipsa quo quidem saepe! Quidem quo ratione fugit amet eaque accusamus blanditiis beatae laboriosam laudantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, placeat."
+            "para" : {
+                "l1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "l2" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+                 "l3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                 "l4" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+            }
         },
         "card_3" : {
             "img" : "/card-img.jpg",
             "title" : "ROTARY CAR PARKING",
             "place" : "TANGAR",
-            "para" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam quos inventore quis reiciendis modi dignissimos repellat corrupti laudantium tenetur quam beatae voluptas dolores, nemo ipsa quo quidem saepe! Quidem quo ratione fugit amet eaque accusamus blanditiis beatae laboriosam laudantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, placeat."
+            "para" : {
+                "l1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "l2" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+                 "l3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                 "l4" : "Voluptas, aspernatur alias sit deserunt pariatur, quas, eveniet provident est at deleniti consequuntur",
+            }
         }
     }
 ]
@@ -82,7 +111,6 @@ export const PuzzleData = [
         }
     }
 ]
-
 
 export const ShuttleData = [
     {
@@ -195,6 +223,7 @@ export const BikeData = [
         }
     }
 ]
+
 export const AsrsData = [
     {
         "title" : "ROTARY CAR PARKING",

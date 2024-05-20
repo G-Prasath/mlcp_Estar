@@ -53,7 +53,7 @@ const Navbar = () => {
               </li>
               <li className="dropdown__item focus:text-white">
                 <div className={`nav__link`} onClick={toggleSubMenu}>
-                    Services
+                    Products
                   <RiArrowDownSLine
                     fontSize={20}
                     className={`${subMenuOpen ? "rotate-180" : ""}`}
