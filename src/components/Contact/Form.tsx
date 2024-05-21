@@ -78,7 +78,7 @@ const Form = () => {
           <div className="w-3/6 max-lg:w-full">
             <div className="w-full aspect-video rounded-lg overflow-hidden">
               <img
-                src="/contact_form_photo.jpg"
+                src="/contact_form_img.jpg"
                 alt="footer-photo"
                 className="w-full h-auto rounded-lg"
               />

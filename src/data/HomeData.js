@@ -48,7 +48,7 @@ export const HomeService = [
   {
     name: "4 Post Hydraulic System",
     link: "4post",
-    img: "/img3.jpg",
+    img: "/home/4_post_product.jpg",
     content:
       "Our 1+1 4 Post Hydraulic System is tailored for private use, ideal for heavy vehicles like SUVs and MPVs. It allows stacking two vehicles in one space, maximizing efficiency. Using hydraulic technology and a sturdy four-post structure, it ensures safe vertical parking. This design optimizes space without compromising accessibility or security, providing homeowners and high-rises a practical solution for parking heavy vehicles.",
   },
@@ -62,7 +62,7 @@ export const HomeService = [
   {
     name: "Shuttle Stacker Parking",
     link: "shuttlestacker",
-    img: "/img1.jpg",
+    img: "/home/shuttle_product.jpg",
     content:
       "The Shuttle Stacker parking system amplifies parking capacity in commercial and residential areas. Using an automated shuttle mechanism, it vertically stores and retrieves vehicles, optimizing space. Ideal for densely populated settings, it enhances accessibility and reduces parking footprint. With advanced technology and customizable configurations, this system efficiently manages parking, offering convenience and efficiency for users in diverse environments.",
   },

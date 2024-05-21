@@ -6,7 +6,7 @@ const About = () => {
     <div className="sec-padding flex items-center w-full max-lg:flex-col relative">
       <div className="w-1/2 max-lg:w-full max-lg:order-1 overflow-hidden">
         <LazyLoadImage
-          src="/about.jpeg"
+          src="/home/About-Us.jpg"
           alt="About-page"
           className="transition-all duration-300 ease-in-out hover:scale-[1.1]"
         />
