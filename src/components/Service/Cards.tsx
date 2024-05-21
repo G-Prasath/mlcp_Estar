@@ -12,6 +12,7 @@ const Cards = ({ card1, card2, card3 }) => {
       </div>
 
       <div className="service-card">
+
         {/* ----------- Card 1 -----------  */}
         <div className="w-full card-1 flex items-center justify-between max-lg:flex-col max-lg:my-10">
           <div className="card-img w-2/5 h-[500px] rounded-lg flex items-center justify-center max-[1200px]:h-[400px] max-lg:w-full max-lg:h-auto max-sm:aspect-square">
@@ -27,9 +28,7 @@ const Cards = ({ card1, card2, card3 }) => {
               <h6 className="text-center text-3xl font-[700] uppercase max-sm:text-2xl">
                 {card1.title}
               </h6>
-              <span className="font-[400] text-xl uppercase">
-                {card1.place}
-              </span>
+
             </div>
 
             <ul className="mb-5"> 
@@ -55,13 +54,11 @@ const Cards = ({ card1, card2, card3 }) => {
           <div className="card-bar h-[400px] w-10 bg-gray rounded-full max-lg:h-10 max-lg:w-full max-sm:rounded-t-lg max-lg:order-3"></div>
 
           <div className="card-cnt w-3/5 bg-light_white flex flex-col items-center max-lg:w-[90%] max-sm:w-full max-lg:order-2">
-            <div className="flex items-center justify-center gap-5 my-10 max-sm:flex-col max-sm:my-5 max-sm:gap-2">
+            <div className="flex items-center justify-center gap-5 my-5 max-sm:flex-col max-sm:my-5 max-sm:gap-2">
               <h6 className="text-center text-3xl font-[700] uppercase max-sm:text-2xl">
                 {card2.title}
               </h6>
-              <span className="font-[400] text-xl uppercase">
-                {card2.place}
-              </span>
+
             </div>
 
             <ul className="mb-5"> 
@@ -96,14 +93,12 @@ const Cards = ({ card1, card2, card3 }) => {
             />
           </div>
 
-          <div className="card-cnt w-3/5 bg-light_white flex flex-col items-center max-lg:w-[90%] max-sm:w-full">
-            <div className="flex items-center justify-center gap-5 my-10 max-sm:flex-col max-sm:my-5 max-sm:gap-2">
+          <div className="card-cnt w-3/5 bg-light_white flex flex-col items-center max-lg:w-[90%] max-sm:w-full px-5">
+            <div className="flex items-center justify-center gap-5 my-8 max-sm:flex-col max-sm:my-5 max-sm:gap-2">
               <h6 className="text-center text-3xl font-[700] uppercase max-sm:text-2xl">
                 {card3.title}
               </h6>
-              <span className="font-[400] text-xl uppercase">
-                {card3.place}
-              </span>
+
             </div>
 
             <ul className="mb-5"> 
@@ -121,6 +116,7 @@ const Cards = ({ card1, card2, card3 }) => {
 
           <div className="card-bar h-[400px] w-10 bg-gray rounded-full max-lg:h-10 max-lg:w-full max-sm:rounded-t-lg"></div>
         </div>
+
       </div>
     </div>
   );

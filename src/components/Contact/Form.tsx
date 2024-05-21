@@ -70,16 +70,8 @@ const Form = () => {
           Get in to Touch
         </h6>
 
-        <p className="text-justify mb-5">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur in
-          unde laudantium quis, nostrum iusto quas deserunt blanditiis quaerat
-          tenetur natus ab nihil. Illo iste est temporibus rem adipisci eos
-          quasi dolor exercitationem quod aperiam totam natus at, inventore
-          molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Laboriosam assumenda eos, suscipit illo ratione tempore exercitationem
-          explicabo odit quam molestiae quaerat officiis. Ratione incidunt
-          voluptatum, ipsum explicabo ducimus minus reiciendis nam inventore
-          culpa id maiores voluptate! Eos quo rem eligendi!
+        <p className="text-center mb-5">
+          Talk to us about your needs and how we can provide the best solutions.
         </p>
 
         <div className="contact_form bg-light_white w-full flex items-center justify-center max-lg:flex-col p-5 max-md:py-10 rounded-t-lg">
@@ -191,7 +183,11 @@ const Form = () => {
               Our Location
             </h6>
             <div className="flex items-center gap-10 justify-center">
-              <img src="/map-icon.png" alt="icon" className="w-[50px] max-sm:hidden" />
+              <img
+                src="/map-icon.png"
+                alt="icon"
+                className="w-[50px] max-sm:hidden"
+              />
               <div>
                 <p className="mb-3">
                   Periya Koladi Rd, Konrajakuppam, Ayappakkam, Chennai-600 095
