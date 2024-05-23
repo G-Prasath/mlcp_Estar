@@ -1,7 +1,20 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import {motion, useInView, useMotionValueEvent, useScroll, useTransform} from "framer-motion"
+
 
 const About = () => {
+  const refEle = useRef(null);
+
+  const isInView = useInView(refEle, {
+    amount: "all",
+  });
+
+  useEffect(() => {
+    console.log(isInView ? "is" : "is Not");
+  },[isInView]);  
+
+  
   return (
     <div className="sec-padding flex items-center w-full max-lg:flex-col relative">
       <div className="w-1/2 max-lg:w-full max-lg:order-1 overflow-hidden">
@@ -38,12 +51,18 @@ const About = () => {
           unwavering dedication to quality and innovation.
         </p>
 
-        <a
+        <motion.a
+          ref={refEle}
+          animate = {{
+            y: isInView ? "0%" : "",
+            opacity: 1
+          }}
+          transition={{ duration: 2}}
           href="#"
           className="text-white font-bold border rounded-full border-white px-5 py-2 mt-3 inline-block hover:text-primary hover:bg-white"
         >
           Read More
-        </a>
+        </motion.a>
       </div>
     </div>
   );

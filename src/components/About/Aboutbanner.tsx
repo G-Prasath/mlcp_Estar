@@ -6,6 +6,7 @@ const Aboutbanner = () => {
     <>
       <div className="bg-about_bg aspect-video bg-center bg-cover">
         <div className="sec-padding gap-20">
+          
           <div className="w-full flex items-center gap-x-[45px] justify-between max-lg:flex-col">
             <div className="w-2/4 max-md:w-full text-center max-lg:w-full">
               <h1 className="uppercase text-4xl font-bold mb-5 max-lg:text-3xl">
