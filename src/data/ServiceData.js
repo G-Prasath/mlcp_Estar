@@ -1,12 +1,12 @@
 export const TwopostData = [
   {
     title: "2 POST 1+1 CAR PARKING",
-    banner: "/img3.jpg",
-    cnt1: `Our two-post hydraulic car parking system is ideal for residential and commercial areas, it optimizes vertical space usage. This innovative solution maximizes parking efficiency, particularly in urban areas with limited space. The system features two robust posts supporting a platform that hydraulically lifts and lowers, allowing two vehicles to park in the space of one. The compact design leverages the height of your parking area, effectively doubling your parking capacity without the need for extensive construction. The compact design doubles parking capacity without extensive construction. The hydraulic operation is smooth and reliable, with safety features like locks and emergency stop buttons. This practical, user-friendly solution enhances parking efficiency and property value.`,
+    banner: "banner/2PostBanner.jpg",
+    cnt1: `Our two-post hydraulic car par king system is ideal for residential and commercial areas, it optimizes vertical space usage. This innovative solution maximizes parking efficiency, particularly in urban areas with limited space. The system features two robust posts supporting a platform that hydraulically lifts and lowers, allowing two vehicles to park in the space of one. The compact design leverages the height of your parking area, effectively doubling your parking capacity without the need for extensive construction. The compact design doubles parking capacity without extensive construction. The hydraulic operation is smooth and reliable, with safety features like locks and emergency stop buttons. This practical, user-friendly solution enhances parking efficiency and property value.`,
     cnt2: `The hydraulic operation ensures smooth and reliable lifting and lowering of the platform, supported by safety features like locks and emergency stop buttons for secure usage. By utilizing this system, you benefit from increased parking efficiency, cost savings compared to building additional structures, and enhanced property value. It's a practical, user-friendly solution designed to meet modern parking challenges. Let's explore the detailed workings and the numerous benefits this system offers.`,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/2-PostParking-1.jpg",
       title: "key Features",
       para: {
         "Heavy-duty": "Heavy-duty Construction for long-lasting durability",
@@ -16,7 +16,7 @@ export const TwopostData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/2-PostParking-2.jpg",
       title: "benefits",
       para: {
         "Increased Parking Capacity": "Expands parking availability without requiring extra space.",
@@ -27,7 +27,7 @@ export const TwopostData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/2-PostParking-3.jpg",
       title: "technical specification",
       para: {
         "Maximum lifting capacity": "Typically ranges from 3,000 kg (6,600 lbs) to 5,000 kg (11,000 lbs), depending on the model.",
@@ -44,12 +44,12 @@ export const TwopostData = [
 export const FourpostData = [
   {
     title: "4 POST 1+1 CAR PARKING",
-    banner: "/img3.jpg",
+    banner: "banner/4PostBanner.jpg",
     cnt1: `This advanced solution is designed to optimize parking space utilization, offering a robust and flexible approach to vehicle storage, particularly in high-demand urban areas. A four-post car parking system features four sturdy posts supporting a platform that lifts vehicles vertically, allowing multiple cars to be parked above one another and making efficient use of vertical space. It is ideal for residential garages, commercial parking lots, and automotive service centers, providing a reliable and versatile parking solution.`,
     cnt2: `The four-post design offers superior stability and load-bearing capacity, accommodating a wide range of vehicle sizes and weights. The hydraulic or electric lifting mechanism ensures smooth and secure operation. Safety features such as mechanical locks, anti-fall devices, and emergency stop buttons are integrated to ensure user safety. This system not only maximizes parking capacity but also enhances property value by offering a practical, user-friendly parking solution. Let’s explore the detailed workings and the numerous benefits this system offers.`,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/4Post-1.jpg",
       title: "Key Features",
       para: {
         "High Strength Construction":
@@ -67,7 +67,7 @@ export const FourpostData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/4Post-2.jpg",
       title: "Benefits",
       para: {
         "Maximized Garage Space":
@@ -83,7 +83,7 @@ export const FourpostData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/4Post-3.jpg",
       title: "Technical Specification",
       para: {
         "Maximum Lifting Capacity": "14,000 lbs (6,350 kg).",
@@ -101,12 +101,12 @@ export const FourpostData = [
 export const PuzzleData = [
   {
     title: "pUZZLE CAR PARKING",
-    banner: "/img3.jpg",
+    banner: "banner/Puzzle-Banner.jpg",
     cnt1: ` Thank you for your interest in our puzzle parking system, aimed at optimizing space efficiency in bustling urban areas. This innovative parking solution offers a dynamic and adaptable approach to vehicle storage, tailored to meet the demands of crowded environments. Puzzle parking systems, also known as automated parking systems, consist of multiple levels and sliding platforms that move vehicles both vertically and horizontally. This intelligent design allows cars to be parked and retrieved in a compact and efficient manner, similar to solving a puzzle. By utilizing the available space to its fullest, puzzle parking systems can significantly increase the number of parking spots within a given area.`,
     cnt2: `The hydraulic operation ensures smooth and reliable lifting and lowering of the platform, supported by safety features like locks and emergency stop buttons for secure usage. By utilizing this system, you benefit from increased parking efficiency, cost savings compared to building additional structures, and enhanced property value. It's a practical, user-friendly solution designed to meet modern parking challenges. Let's explore the detailed workings and the numerous benefits this system offers.`,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Puzzle-1.jpg",
       title: "Key Features",
       para: {
         "Space Optimization":
@@ -124,7 +124,7 @@ export const PuzzleData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Puzzle-2.jpg",
       title: "Benefits",
       para: {
         "Maximized Parking Capacity":
@@ -142,7 +142,7 @@ export const PuzzleData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Puzzle-3.jpg",
       title: "Technical Specification",
       para: {
         "Maximum Lifting Capacity":
@@ -161,12 +161,12 @@ export const PuzzleData = [
 export const ShuttleData = [
   {
     title: "Shuttle stacker PARKING",
-    banner: "/img3.jpg",
+    banner: "banner/Shuttle-Banner.jpg",
     cnt1: `Introducing our innovative Shuttle Parking service, meticulously designed to revolutionize your parking experience. Engineered to optimize parking space utilization, particularly in bustling urban areas, our system offers a seamless blend of efficiency and reliability. With designated spaces and a streamlined approach, we ensure that your vehicle is securely parked while you're away.`,
     cnt2: `Our shuttle service operates like clockwork, whisking you directly to the parking terminal with ease, allowing you to focus on the excitement of your journey ahead. Safety is paramount, with state-of-the-art security features ensuring the protection of your vehicle throughout its stay. By choosing our Shuttle Parking service, you not only maximize convenience but also enhance the overall travel experience. Join us as we explore the detailed workings and numerous benefits of our innovative shuttle parking system. Your stress-free journey begins here.`,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/shuttlestacker-1.jpg",
       title: "Key Features",
       para: {
         "Automated Shuttle System":
@@ -184,7 +184,7 @@ export const ShuttleData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/shuttlestacker-2.jpg",
       title: "Benefits",
       para: {
         "Space Efficiency":
@@ -202,7 +202,7 @@ export const ShuttleData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/shuttlestacker-3.jpg",
       title: "Technical Specification",
       para: {
         "Maximum Lifting Capacity":
@@ -221,13 +221,13 @@ export const ShuttleData = [
 export const TowerData = [
   {
     title: "Tower PARKING",
-    banner: "/img3.jpg",
+    banner: "banner/Tower-Banner.jpg",
     cnt1: `Introducing our Tower Parking solution, an innovative answer to urban parking challenges. Engineered to optimize space utilization in dense city environments, Tower Parking offers a advanced approach to vehicle storage. This advanced system features a towering structure equipped with multiple levels of parking spaces, utilizing vertical space efficiently. Ideal for both residential and commercial settings, Tower Parking provides a reliable and flexible parking solution.`,
     cnt2: `With its sturdy design and advanced technology, Tower Parking ensures superior stability and load-bearing capacity, accommodating various vehicle sizes and weights. The hydraulic or electric lifting mechanism guarantees smooth and secure operation, while integrated safety features such as mechanical locks and emergency stop buttons prioritize user safety. Tower Parking not only maximizes parking capacity but also enhances property value by offering a practical, user-friendly parking solution. Join us as we delve into the detailed workings and numerous benefits of Tower Parking. Say goodbye to parking woes and hello to a smarter, more efficient parking experience.
         `,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Tower-1.jpg",
       title: "Key Features",
       para: {
         "Vertical Design":
@@ -245,7 +245,7 @@ export const TowerData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Tower-2.jpg",
       title: "Benefits",
       para: {
         "Space Efficiency":
@@ -263,7 +263,7 @@ export const TowerData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Tower-3.jpg",
       title: "Technical Specification",
       para: {
         "Maximum Lifting Capacity":
@@ -282,13 +282,13 @@ export const TowerData = [
 export const MultilevelData = [
   {
     title: "Multilevel Stacked  rotary PARKING",
-    banner: "/img3.jpg",
+    banner: "banner/Rotary-Banner.jpg",
     cnt1: `Grateful for your interest in our multilevel stacked rotary parking system. This innovative solution combines both vertical and horizontal rotary parking configurations to optimize space efficiency and enhance convenience in urban environments with limited parking availability. Our multilevel stacked rotary parking system integrates two types of rotary parking: vertical rotary parking and horizontal rotary parking. This dynamic system utilizes a combination of vertical and horizontal movement to store and retrieve vehicles automatically.`,
     cnt2: `It features multiple levels of rotary platforms that rotate to park and retrieve cars efficiently, making the most of available space.
         This advanced system is designed to address the growing need for efficient parking solutions in densely populated areas, offering a practical and advanced method to manage parking challenges. By maximizing the use of vertical and horizontal space, our system ensures a higher capacity for vehicle storage within a compact footprint, significantly improving parking convenience and accessibility.`,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Rotary-1.jpg",
       title: "Key Features",
       para: {
         "Two Types":
@@ -308,7 +308,7 @@ export const MultilevelData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Rotary-2.jpg",
       title: "Benefits",
       para: {
         Versatility:
@@ -326,7 +326,7 @@ export const MultilevelData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Rotary-3.jpg",
       title: "Technical Specification",
       para: {
         "Maximum Lifting Capacity":
@@ -346,12 +346,12 @@ export const MultilevelData = [
 export const BikeData = [
   {
     title: "Bike PARKING",
-    banner: "/img3.jpg",
+    banner: "banner/Bike-Banner.jpg",
     cnt1: `Welcome, and thank you for considering our bike parking solutions. As cities continue to prioritize sustainability and alternative modes of transportation, the need for efficient and secure bike parking becomes increasingly essential. Our bike parking systems are designed to meet this demand by providing convenient, safe, and space-efficient storage solutions for bicycles.`,
     cnt2: `Our bike parking solutions encompass a range of options tailored to various settings and user needs. Whether it's a simple bike rack for short-term parking or a multi-level automated system for long-term storage, we offer versatile solutions to accommodate different environments, from urban streets to residential complexes and office buildings.   `,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Bike-parking-1.jpg",
       title: "Key Features",
       para: {
         "Secure Storage":
@@ -367,7 +367,7 @@ export const BikeData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Bike-parking-2.jpg",
       title: "Benefits",
       para: {
         Security:
@@ -385,7 +385,7 @@ export const BikeData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/Bike-parking-3.jpg",
       title: "Technical Specification",
       para: {
         Materials:
@@ -408,12 +408,12 @@ export const BikeData = [
 export const AsrsData = [
   {
     title: "Automated Storage and Retrieval System ",
-    banner: "/img3.jpg",
+    banner: "banner/Asrs-Banner.jpg",
     cnt1: `Revolutionize inventory management with our Automated Storage and Retrieval System (ASRS). Featuring advanced automation technology, it optimizes space utilization and streamlines storage and retrieval processes. With precision handling by cranes, conveyors, and shuttles, our ASRS ensures unparalleled efficiency and accuracy in warehouses and distribution centers. Benefit from reduced labor costs, minimized errors, and increased throughput, enhancing overall operational efficiency. `,
     cnt2: `Designed for scalability, our ASRS adapts to diverse industries, including manufacturing, logistics, and retail. Experience enhanced productivity and accuracy with our ASRS, empowering your supply chain for success.`,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/asrs-1.jpg",
       title: "Key Features",
       para: {
         "Automated Storage":
@@ -433,7 +433,7 @@ export const AsrsData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/asrs-2.jpg",
       title: "Benefits",
       para: {
         "Increased Efficiency":
@@ -453,7 +453,7 @@ export const AsrsData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/asrs-3.jpg",
       title: "Technical Specification",
       para: {
         "Storage Capacity":
@@ -478,11 +478,11 @@ export const AsrsData = [
 export const CarData = [
   {
     title: "Car Elevator",
-    banner: "/img3.jpg",
+    banner: "banner/Car-Banner.jpg",
     cnt1: `Car elevators are innovative vertical transportation systems designed to lift vehicles between different levels of a building or structure. Unlike traditional elevators that transport people, car elevators are specifically engineered to accommodate automobiles, motorcycles, or even small trucks. These elevators are commonly used in parking garages, car dealerships, residential buildings, and commercial facilities where space is limited or where convenient vehicular access to multiple floors is necessary. By efficiently utilizing vertical space, car elevators help maximize parking capacity and streamline vehicle storage and retrieval processes. They typically feature robust safety mechanisms to ensure the secure transportation of vehicles and are often equipped with advanced control systems for smooth operation. Car elevators offer a practical solution for optimizing space and enhancing convenience in urban environments and high-density settings.`,
 
     card_1: {
-      img: "/card-img.jpg",
+      img: "Product-Page/car-1.jpg",
       title: "Key Features",
       para: {
         "Vehicle Capacity":
@@ -502,7 +502,7 @@ export const CarData = [
       },
     },
     card_2: {
-      img: "/card-img.jpg",
+      img: "Product-Page/car-2.jpg",
       title: "Benefits",
       para: {
         "Enhanced Security":
@@ -515,7 +515,7 @@ export const CarData = [
       },
     },
     card_3: {
-      img: "/card-img.jpg",
+      img: "Product-Page/car-3.jpg",
       title: "Technical Specification",
       para: {
         "Maximum Lifting Capacity":

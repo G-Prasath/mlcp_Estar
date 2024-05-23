@@ -69,21 +69,21 @@ const Funfact = () => {
         <div className="w-3/5 max-lg:w-full grid grid-cols-2 gap-3">
           <div className="bg-gray h-[244px] max-md:h-[200px] overflow-hidden">
             <LazyLoadImage
-              src="/funfact.jpeg"
+              src="/achievement-1.jpg"
               alt="funfact_img"
               className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500"
             />
           </div>
           <div className="bg-gray row-span-2 max-lg:order-2 max-lg:col-span-2 overflow-hidden">
             <LazyLoadImage
-              src="/funfact.jpeg"
+              src="/achievement-2.jpg"
               alt="funfact_img"
               className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500"
             />
           </div>
           <div className="bg-gray h-[244px] max-md:h-[200px] overflow-hidden">
             <LazyLoadImage
-              src="/funfact.jpeg"
+              src="/achievement-3.jpg"
               alt="funfact_img"
               className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500"
             />

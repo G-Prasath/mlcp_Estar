@@ -7,7 +7,7 @@ const Fourpost = () => {
   return (
     <div>
     {FourpostData.map((item, index) => (
-      <>
+      <React.Fragment key={index}>
         <Banner
           imgSrc={item.banner}
           mainTitle={item.title}
@@ -15,7 +15,7 @@ const Fourpost = () => {
           cnt2={item.cnt2}
         />
         <Cards card1={item.card_1} card2={item.card_2} card3={item.card_3} />
-      </>
+        </React.Fragment>
     ))}
   </div>
   )

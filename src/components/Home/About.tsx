@@ -1,7 +1,12 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {motion, useInView, useMotionValueEvent, useScroll, useTransform} from "framer-motion"
-
+import {
+  motion,
+  useInView,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 const About = () => {
   const refEle = useRef(null);
@@ -12,19 +17,28 @@ const About = () => {
 
   useEffect(() => {
     console.log(isInView ? "is" : "is Not");
-  },[isInView]);  
+  }, [isInView]);
 
-  
   return (
     <div className="sec-padding flex items-center w-full max-lg:flex-col relative">
-      <div className="w-1/2 max-lg:w-full max-lg:order-1 overflow-hidden">
+      <div
+        data-aos="flip-down"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="700"
+        className="w-1/2 max-lg:w-full max-lg:order-1 rounded-lg overflow-hidden"
+      >
         <LazyLoadImage
           src="/home/About-Us.jpg"
           alt="About-page"
           className="transition-all duration-300 ease-in-out hover:scale-[1.1]"
         />
       </div>
-      <div className="w-1/2 aspect-video max-lg:w-full bg-primary py-6 px-10 about-right max-lg:px-5 ml-[-20px] max-lg:ml-[0] max-lg:my-3 rounded-lg z-10">
+      <div
+        data-aos="flip-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="700"
+        className="w-1/2 aspect-video max-lg:w-full bg-primary py-6 px-10 about-right max-lg:px-5 ml-[-20px] max-lg:ml-[0] max-lg:my-3 rounded-lg z-10"
+      >
         <h3 className="font-bold text-[25px] text-white text-center">
           ABOUT US
         </h3>
@@ -53,11 +67,11 @@ const About = () => {
 
         <motion.a
           ref={refEle}
-          animate = {{
+          animate={{
             y: isInView ? "0%" : "",
-            opacity: 1
+            opacity: 1,
           }}
-          transition={{ duration: 2}}
+          transition={{ duration: 2 }}
           href="#"
           className="text-white font-bold border rounded-full border-white px-5 py-2 mt-3 inline-block hover:text-primary hover:bg-white"
         >

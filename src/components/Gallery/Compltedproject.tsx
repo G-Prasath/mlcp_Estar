@@ -5,17 +5,15 @@ import Gallery_Card from "./Gallery_Card";
 const Compltedproject = () => {
   return (
     <div className="sec-padding w-full">
-
       <div className="w-full flex flex-col justify-center items-center">
         <h1 className="text-center uppercase text-3xl max-md:text-2xl font-[700]">
           Completed Projects
         </h1>
         <p className="text-center w-[1000px] mt-4 max-lg:w-full max-lg:text-justify">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
-          quisquam sapiente officia alias impedit molestiae neque! Voluptatibus,
-          eum obcaecati quo sequi facilis error accusantium sapiente assumenda,
-          nam deleniti at doloribus, fuga ab. Totam, laborum iure deleniti et ab
-          veritatis mollitia!
+          Our portfolio of completed projects reflects our passion for
+          innovation and precision. Each project is a testament to our team's
+          skill and dedication, demonstrating our ability to deliver outstanding
+          results on time and within budget for our clients.
         </p>
       </div>
 
@@ -41,7 +39,6 @@ const Compltedproject = () => {
           ))}
         </div>
       </div>
-
     </div>
   );
 };

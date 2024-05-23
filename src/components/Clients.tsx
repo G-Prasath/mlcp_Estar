@@ -34,35 +34,35 @@ const Clients = () => {
 
 
           <SplideSlide className="relative">
-            <img src="/casa_grand.png" alt="Image 1" className="aspect-square client_scroll" />
+            <img src="clients/Aachi.png" alt="Image 1" className="aspect-square client_scroll" />
           </SplideSlide>
           <SplideSlide className="relative">
-            <img src="/chennai_silks.png" alt="Image 2" className="aspect-square client_scroll" />
+            <img src="clients/chennai_silks.png" alt="Image 2" className="aspect-square client_scroll" />
           </SplideSlide>
           <SplideSlide className="relative">
-            <img src="./casa_grand.png" alt="Image 3" className="aspect-square client_scroll" />
-          </SplideSlide>
-
-
-          <SplideSlide className="relative">
-            <img src="/casa_grand.png" alt="Image 1" className="aspect-square client_scroll" />
-          </SplideSlide>
-          <SplideSlide className="relative">
-            <img src="/chennai_silks.png" alt="Image 2" className="aspect-square client_scroll" />
-          </SplideSlide>
-          <SplideSlide className="relative">
-            <img src="./casa_grand.png" alt="Image 3" className="aspect-square client_scroll" />
+            <img src="clients/casa_grand.png" alt="Image 3" className="aspect-square client_scroll" />
           </SplideSlide>
 
 
           <SplideSlide className="relative">
-            <img src="/casa_grand.png" alt="Image 1" className="aspect-square client_scroll" />
+            <img src="clients/Dev-Automobiles.png" alt="Image 1" className="aspect-square client_scroll" />
           </SplideSlide>
           <SplideSlide className="relative">
-            <img src="/chennai_silks.png" alt="Image 2" className="aspect-square client_scroll" />
+            <img src="clients/Equitas.png" alt="Image 2" className="aspect-square client_scroll" />
           </SplideSlide>
           <SplideSlide className="relative">
-            <img src="./casa_grand.png" alt="Image 3" className="aspect-square client_scroll" />
+            <img src="clients/Kalyan.png" alt="Image 3" className="aspect-square client_scroll" />
+          </SplideSlide>
+
+
+          <SplideSlide className="relative">
+            <img src="clients/Kasi.png" alt="Image 1" className="aspect-square client_scroll" />
+          </SplideSlide>
+          <SplideSlide className="relative">
+            <img src="clients/Novel.png" alt="Image 2" className="aspect-square client_scroll" />
+          </SplideSlide>
+          <SplideSlide className="relative">
+            <img src="clients/Taj.png" alt="Image 3" className="aspect-square client_scroll" />
           </SplideSlide>
 
 

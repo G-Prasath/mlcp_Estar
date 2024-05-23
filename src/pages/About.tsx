@@ -11,7 +11,6 @@ const About = () => {
       <Aboutsec/>
       <Ourteam/>
       <Officeimg/>
-
     </>
   )
 }
