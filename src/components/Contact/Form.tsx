@@ -4,6 +4,7 @@ interface FormData {
   username: string;
   email: string;
   phone: string;
+  selectedOption: string;
   message: string;
 }
 
@@ -12,6 +13,7 @@ const Form = () => {
     username: "",
     email: "",
     phone: "",
+    selectedOption: "",
     msg: "",
   });
 
@@ -19,11 +21,18 @@ const Form = () => {
     username: "",
     email: "",
     phone: "",
+    selectedOption: "",
     msg: "",
   });
 
   const validate = () => {
-    const newErrors = { username: "", email: "", phone: "", msg: "" };
+    const newErrors = {
+      username: "",
+      email: "",
+      phone: "",
+      selectedOption: "",
+      msg: "",
+    };
 
     if (!formData.username.trim()) {
       newErrors.username = "Name is required";
@@ -40,7 +49,11 @@ const Form = () => {
     } else if (!/^\d{10}$/.test(formData.phone)) {
       newErrors.phone = "Phone number must be 10 digits";
     }
-
+    if (!formData.selectedOption.trim()) {
+      newErrors.selectedOption = "Please select an option";
+    } else if (!/^\d{10}$/.test(formData.selectedOption)) {
+      newErrors.selectedOption = "Please select an option";
+    }
     if (!formData.msg.trim()) {
       newErrors.msg = "Message is required";
     }
@@ -137,15 +150,55 @@ const Form = () => {
                     <p className="text-error_clr">{errors.phone}</p>
                   )}
                 </div>
+                {/* select option */}
 
-                <div className="mb-5 max-md:mb-1">
+                <div className="max-md:mt-5">
+                  <select
+                    id="select"
+                    name="selectedOption"
+                    value={formData.selectedOption}
+                    onChange={handleChange}
+                    style={{
+                      border: "1px solid #e5e7eb",
+                      borderRadius: "0.50rem",
+                      width: "100%",
+                      padding: "9px 2.5rem",
+                    }}
+                  >
+                    <option value="">Select Service*</option>
+                    <option value="2 Post Hydraulic System">
+                      2 Post Hydraulic System
+                    </option>
+                    <option value="4 Post Hydraulic System">
+                      4 Post Hydraulic System
+                    </option>
+                    <option value="Puzzle Parking">Puzzle Parking</option>
+                    <option value="Shuttle Stacker Parking">
+                      Shuttle Stacked Parking
+                    </option>
+                    <option value="Tower Parking">Tower Parking</option>
+                    <option value="Multilevel Stacked Rotary Parking">
+                      Multilevel Stacked Rotary Parking
+                    </option>
+                    <option value="Bike Parking">Bike Parking</option>
+                    <option value="Automated Storage And Retrieval System">
+                      Automated Storage And Retrieval System
+                    </option>
+                    <option value="Elevated Car Lift">Car Lift</option>
+                  </select>
+                </div>
+                {errors.phone && (
+                  <p className="text-error_clr">{errors.selectedOption}</p>
+                )}
+
+                <div className="my-5 max-md:mt-[-10px] max-md:mb-1">
                   <label className="text-white"></label>
                   <textarea
                     name="msg"
                     className="w-full rounded-lg p-2 mt-2 max-md:mt-5 outline-none px-10 min-h-[50px]"
                     placeholder="Message"
                     cols={20}
-                    rows={4}
+                    rows={2}
                     autoComplete="off"
                     value={formData.msg}
                     onChange={handleChange}

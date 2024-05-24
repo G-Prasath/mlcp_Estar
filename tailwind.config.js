@@ -22,7 +22,8 @@ export default {
       icon_color: '#dbdbdb',
       footer_dark_bg: '#1c1817',
       footer_bg: '#231E1C',
-      error_clr: "#ff0000"
+      error_clr: "#ff0000",
+      tst: "#dfe2e7"
     },
     extend: {
       boxShadow: {

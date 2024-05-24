@@ -10,8 +10,9 @@ const Funfact = () => {
           OUR ACHIVEMENTS
         </h2>
       </div>
-      <div className="flex items-center w-full max-lg:flex-col relative gap-[20px] max-lg: flex-cols px-[5%] max-lg:p-5">
+<div className="flex items-center w-full max-lg:flex-col relative gap-[20px] max-lg: flex-cols px-[5%] max-lg:p-5">
         <div className="grid grid-cols-2 gap-2 w-2/5 max-lg:w-full">
+
           <div className="bg-light_white inline-flex items-center justify-center w-full h-[230px]">
             <div className="flex flex-col">
               <div className="max-md:text-center">
@@ -25,6 +26,7 @@ const Funfact = () => {
               <p className="mt-2 uppercase text-center">Years experience</p>
             </div>
           </div>
+
           <div className="bg-light_white inline-flex items-center justify-center w-full h-[230px]">
             <div className="flex flex-col">
               <div className="max-md:text-center">
@@ -38,6 +40,8 @@ const Funfact = () => {
               <p className="mt-2 uppercase text-center">Successful Clients</p>
             </div>
           </div>
+
+
           <div className="bg-light_white inline-flex items-center justify-center w-full h-[230px]">
             <div className="flex flex-col">
               <div className="max-md:text-center">
@@ -51,6 +55,7 @@ const Funfact = () => {
               <p className="mt-2 uppercase text-center">Staffs Strength</p>
             </div>
           </div>
+          
           <div className="bg-light_white inline-flex items-center justify-center w-full h-[230px]">
             <div className="flex flex-col">
               <div className="max-md:text-center">
@@ -67,25 +72,25 @@ const Funfact = () => {
         </div>
 
         <div className="w-3/5 max-lg:w-full grid grid-cols-2 gap-3">
-          <div className="bg-gray h-[244px] max-md:h-[200px] overflow-hidden">
+          <div className="bg-tst h-[244px] max-md:h-[200px] overflow-hidden">
             <LazyLoadImage
-              src="/achievement-1.jpg"
+              src="/achievement-1.jpeg"
               alt="funfact_img"
-              className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500"
+              className="w-full h-full hover:scale-[1.7] transition ease-in-out duration-500 object-contain max-md:object-cover scale-[1.5]"
             />
           </div>
-          <div className="bg-gray row-span-2 max-lg:order-2 max-lg:col-span-2 overflow-hidden">
+          <div className="bg-tst row-span-2 max-lg:order-2 max-lg:col-span-2 overflow-hidden">
             <LazyLoadImage
-              src="/achievement-2.jpg"
+              src="/achievement-3.jpeg"
               alt="funfact_img"
-              className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500"
+              className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500 object-cover"
             />
           </div>
-          <div className="bg-gray h-[244px] max-md:h-[200px] overflow-hidden">
+          <div className="bg-tst h-[244px] max-md:h-[200px] overflow-hidden">
             <LazyLoadImage
-              src="/achievement-3.jpg"
+              src="/achievement-2.jpeg"
               alt="funfact_img"
-              className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500"
+              className="w-full h-full hover:scale-[1.1] transition ease-in-out duration-500 object-cover"
             />
           </div>
         </div>

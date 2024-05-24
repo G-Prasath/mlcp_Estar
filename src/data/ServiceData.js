@@ -27,7 +27,7 @@ export const TwopostData = [
       },
     },
     card_3: {
-      img: "Product-Page/2-PostParking-3.jpg",
+      img: "/Product-Page/2-PostParking-3.jpg",
       title: "technical specification",
       para: {
         "Maximum lifting capacity": "Typically ranges from 3,000 kg (6,600 lbs) to 5,000 kg (11,000 lbs), depending on the model.",

@@ -47,14 +47,13 @@ const FaqsItems = () => {
                 <div className="service-right_btn mt-5 flex items-center justify-end">
                   <a
                     href={item.link}
-                    className="text-primary font-bold border border-primary px-[15px] py-[8px] rounded-full hover:text-white hover:bg-primary"
+                    className="text-primary ml-2 font-bold border border-primary px-[15px] py-[8px] rounded-full hover:text-white hover:bg-primary"
                   >
                     Read More
                   </a>
                 </div>
               </div>
             </div>
-
           </div>
         ))}
       </div>

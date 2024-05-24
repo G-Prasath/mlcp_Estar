@@ -5,9 +5,11 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { useState } from "react";
 import React from "react";
 import { Navlinks } from "../../data/HomeData";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isActive, setIsActive] = useState("home")
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,9 +26,9 @@ const Navbar = () => {
       <header className="header">
         <nav className="nav nav_container">
           <div className="nav__data">
-            <a href="/" className="nav__logo">
+            <Link to="/" className="nav__logo">
               <img src="/header_logo.png" alt="Home_Logo" />
-            </a>
+            </Link>
 
             <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
               {isMenuOpen ? (
@@ -42,14 +44,14 @@ const Navbar = () => {
           >
             <ul className="nav__list uppercase text-sm">
               <li className="max-lg:border-b border-gray">
-                <a href="/" className="nav__link">
+                <Link to="/" className={`nav__link ${isActive === "home" ? "text-primary": ""}`} onClick={() => setIsActive("home")}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="nav__link">
+                <Link to="/about" className={`nav__link ${isActive === "about" ? "text-primary": ""}`} onClick={() => setIsActive("about")}>
                   About
-                </a>
+                </Link>
               </li>
               <li className="dropdown__item focus:text-white">
                 <div className={`nav__link`} onClick={toggleSubMenu}>
@@ -65,24 +67,24 @@ const Navbar = () => {
                 >
                   {Navlinks.map((item, index) => (
                     <li key={index}>
-                      <a href={item.link} className="dropdown__link">
+                      <Link to={item.link} className="dropdown__link">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </li>
 
               <li>
-                <a href="/gallery" className="nav__link">
+                <Link to="/gallery" className={`nav__link ${isActive === "gallery" ? "text-primary": ""}`} onClick={() => setIsActive("gallery")}>
                   Our Gallery
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="/contact" className="nav__link">
+                <Link to="/contact" className={`nav__link ${isActive === "contact" ? "text-primary": ""}`} onClick={() => setIsActive("contact")}>
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

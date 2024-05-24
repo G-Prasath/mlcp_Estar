@@ -1,27 +1,32 @@
 import React, { useState } from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import FaqsItems from "./FaqsItems";
 import { HomeService } from "../../data/HomeData";
+
 
 const Services = () => {
   const [arrIndex, setArrIndex] = useState(0);
 
   const changeService = (index: any) => {
     setArrIndex(index);
-  }; 
-  
+  };
 
-  
   return (
     <>
       <div className="w-full sec-padding flex items-center justify-between max-lg:hidden">
         <div className="w-2/5 pl-10">
-          <h5 className="text-[30px] font-bold mb-8 uppercase max-lg:text-center">Services</h5>
+          <h5 className="text-[30px] font-bold mb-8 uppercase max-lg:text-center">
+            Services
+          </h5>
           <ul className="flex flex-col gap-y-[7.5px]">
             {HomeService.map((item, index) => (
               <li key={index} onClick={() => changeService(index)}>
-                <div className={`flex items-center cursor-pointer pl-4 ${arrIndex === index ? "bg-primary rounded-l-lg" : ""} `}>
+                <div
+                  className={`flex items-center cursor-pointer pl-4 ${
+                    arrIndex === index ? "bg-primary rounded-l-lg" : ""
+                  } `}
+                >
                   <FaCircleArrowRight
                     fontSize={20}
                     className={`${
@@ -58,11 +63,17 @@ const Services = () => {
                     {item.content}
                   </div>
                   <div className="service-right_btn mt-5 flex items-center justify-end">
+                  <a
+                      href="/Sample.pdf" target="_blank"
+                      className="text-gray font-bold border border-prmary px-[15px] ml-2 py-[8px] rounded-full hover:text-primary hover:bg-white"
+                    >
+                      Brochure
+                    </a>
                     <a
                       href={item.link}
-                      className="text-gray font-bold border border-prmary px-[15px] py-[8px] rounded-full hover:text-primary hover:bg-white"
+                      className="text-gray font-bold border border-prmary px-[15px] ml-2 py-[8px] rounded-full hover:text-primary hover:bg-white"
                     >
-                      Learn More
+                      Read More
                     </a>
                   </div>
                 </div>

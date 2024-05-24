@@ -1,23 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {
-  motion,
-  useInView,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
 
 const About = () => {
-  const refEle = useRef(null);
-
-  const isInView = useInView(refEle, {
-    amount: "all",
-  });
-
-  useEffect(() => {
-    console.log(isInView ? "is" : "is Not");
-  }, [isInView]);
 
   return (
     <div className="sec-padding flex items-center w-full max-lg:flex-col relative">
@@ -37,7 +21,7 @@ const About = () => {
         data-aos="flip-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="700"
-        className="w-1/2 aspect-video max-lg:w-full bg-primary py-6 px-10 about-right max-lg:px-5 ml-[-20px] max-lg:ml-[0] max-lg:my-3 rounded-lg z-10"
+        className="w-1/2 aspect-video max-lg:w-full bg-primary py-6 px-10 about-right max-lg:px-5 ml-[-5%] max-lg:ml-[0] max-lg:my-3 rounded-lg z-10"
       >
         <h3 className="font-bold text-[25px] text-white text-center">
           ABOUT US
@@ -65,18 +49,12 @@ const About = () => {
           unwavering dedication to quality and innovation.
         </p>
 
-        <motion.a
-          ref={refEle}
-          animate={{
-            y: isInView ? "0%" : "",
-            opacity: 1,
-          }}
-          transition={{ duration: 2 }}
+        <a
           href="#"
           className="text-white font-bold border rounded-full border-white px-5 py-2 mt-3 inline-block hover:text-primary hover:bg-white"
         >
           Read More
-        </motion.a>
+        </a>
       </div>
     </div>
   );

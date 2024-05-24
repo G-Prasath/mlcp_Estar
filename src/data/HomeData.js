@@ -143,9 +143,9 @@ export const Whychoose = [
 
 export const FooterData = [
   {
-    title: "Address:",
+    title: "Factory-I :",
     links: [
-      { label: "Phone: +91 93400 12202,", url: "/tel:9340012202" },
+      { label: "Phone: +91 93400 12200,", url: "/tel:9340012200" },
       { label: "Email: carparking@estar.in,", url: "/carparking@estar.in" },
       { label: "B/S Manawala Govt Hospital," },
       { label: "Amristar- 144115," },
@@ -153,9 +153,9 @@ export const FooterData = [
     ],
   },
   {
-    title: "Address:",
+    title: "Factory-II :",
     links: [
-      { label: "Phone: +91 93400 12202,", url: "/tel:9340012202" },
+      { label: "Phone: +91 75500 44048,", url: "/tel:75500 44048" },
       { label: "Email: info@estar.in,", url: "/info@estar.in" },
       { label: "Periya Koladi Rd, Konrajakuppam," },
       { label: "Ayappakkam, Chennai-600 095" },
