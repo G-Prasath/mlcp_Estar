@@ -8,13 +8,15 @@ const Ourteam = () => {
       <h6 className="text-center text-4xl font-[700] uppercase">our team</h6>
 
       <div className="flex items-center gap-10 justify-between my-10 max-lg:flex-col max-lg:gap-y-5">
+
         <div className="w-2/4 max-lg:w-full flex justify-center overflow-hidden">
           <LazyLoadImage
             src="/ourteam.png"
             alt="Team-Members"
-            className="w-[700px] h-[480px] bg-contain bg-center rounded-lg hover:scale-105 duration-300"
+            className="w-[700px] h-[480px] max-sm:w-full max-sm:h-full bg-contain bg-center rounded-lg hover:scale-105 duration-300"
           />
         </div>
+
         <div className="w-2/4 max-lg:w-full text-center">
           <h6 className="text-2xl font-[700] uppercase">jAYARAMAN k</h6>
           <small className="text-[16px] uppercase tracking-wide">

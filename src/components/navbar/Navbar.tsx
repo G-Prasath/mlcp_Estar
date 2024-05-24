@@ -81,7 +81,7 @@ const Navbar = () => {
 
               <li>
                 <a href="/contact" className="nav__link">
-                  Contact
+                  Contact us
                 </a>
               </li>
             </ul>
