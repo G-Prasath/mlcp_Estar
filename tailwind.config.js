@@ -9,7 +9,7 @@ export default {
       md: "768px", // Medium
       lg: "1024px", // Large
       xl: "1280px", // Extra Large
-      "2xl": "1536px", // Extra Extra Large
+      "2xl" : "1536px", // Extra Extra Large
     },
     colors: {
       primary: "#1544AB",

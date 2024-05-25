@@ -21,7 +21,7 @@ const About = () => {
         data-aos="flip-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="700"
-        className="w-1/2 aspect-video max-lg:w-full bg-primary py-6 px-10 about-right max-lg:px-5 ml-[-5%] max-lg:ml-[0] max-lg:my-3 rounded-lg z-10"
+        className="w-1/2 aspect-video max-lg:w-full bg-primary py-6 px-10 about-right max-lg:px-5 max-2xl:ml-[-10%] ml-[-5%] max-lg:ml-[0] max-lg:my-3 rounded-lg z-10"
       >
         <h3 className="font-bold text-[25px] text-white text-center">
           ABOUT US
