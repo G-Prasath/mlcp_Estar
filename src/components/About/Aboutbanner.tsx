@@ -1,5 +1,6 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ReactPlayer from 'react-player'
 
 const Aboutbanner = () => {
   return (
@@ -28,25 +29,17 @@ const Aboutbanner = () => {
                 converge for the prosperity of all.
               </p>
             </div>
-            <div className="w-2/4 max-md:w-full rounded-lg max-lg:w-full">
-              <div className="w-full h-[505px] max-lg:w-full max-lg:h-[350px] overflow-hidden rounded-lg">
-                <LazyLoadImage
-                  src="/about-banner.jpg"
-                  alt="about"
-                  className="w-full h-full aspect-video rounded-lg hover:scale-110 hover:bg-indigo-500 duration-300"
-                />
+            <div className="w-2/4 max-md:w-full max-lg:w-full">
+              <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden">
+                <ReactPlayer playing={true} loop={true} controls={true} url='/1.mp4' height={500} />
               </div>
             </div>
           </div>
 
           <div className="w-full flex items-center gap-x-[45px] justify-between max-lg:flex-col max-lg:my-[50px]">
-            <div className="w-2/4 max-md:w-full rounded-lg max-lg:w-full max-lg:order-2">
-              <div className="w-full h-[505px] max-lg:w-full max-lg:h-[350px] overflow-hidden rounded-lg">
-                <LazyLoadImage
-                  src="/about-banner.jpg"
-                  alt="about"
-                  className="w-full h-full aspect-video rounded-lg hover:scale-110 hover:bg-indigo-500 duration-300"
-                />
+            <div className="w-2/4 max-md:w-full max-lg:w-full max-lg:order-2">
+              <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden">
+                 <ReactPlayer playing={true} loop={true} controls={true} url='/2.mp4' height={500} />
               </div>
             </div>
 

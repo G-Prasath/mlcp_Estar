@@ -6,29 +6,30 @@ interface FormData {
   username: string;
   email: string;
   phone: string;
-  selectedOption: string;
-  message: string;
+  service: string;
 }
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
+  const [submitting, setSubmitting] = useState(false);
+  const [formData, setFormData] = useState<FormData>({
     username: "",
     email: "",
     phone: "",
-    selectedOption: "",
-    msg: "",
+    service: "",
   });
+  const [errors, setErrors] = useState<Partial<FormData>>({});
 
-  const [errors, setErrors] = useState({
-    username: "",
-    email: "",
-    phone: "",
-    selectedOption: "",
-    msg: "",
-  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-  const validate = () => {
-    const newErrors = { username: "", email: "", phone: "", selectedOption: "", msg: "" };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const newErrors: Partial<FormData> = {};
 
     if (!formData.username.trim()) {
       newErrors.username = "Name is required";
@@ -45,44 +46,50 @@ const ContactForm = () => {
     } else if (!/^\d{10}$/.test(formData.phone)) {
       newErrors.phone = "Phone number must be 10 digits";
     }
-    if (!formData.selectedOption.trim()) {
-      newErrors.selectedOption = "Please select an option";
-    } else if (!/^\d{10}$/.test(formData.selectedOption)) {
-      newErrors.selectedOption = "Please select an option";
-    }
-    if (!formData.msg.trim()) {
-      newErrors.msg = "Message is required";
+
+    if (!formData.service.trim()) {
+      newErrors.service = "Please select an option";
     }
 
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+    if (Object.keys(newErrors).length === 0) {
+            
+      try {
+        setSubmitting(true);
+        const response = await fetch("https://email-server-aoiw.onrender.com/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validate()) {
-      console.log("Form submitted:", formData);
+        if (response.ok) {
+          setFormData({
+            username: "",
+            email: "",
+            phone: "",
+            service: "",
+          });
+        } else {
+          console.error("Failed to send email");
+        }
+      } catch (error) {
+        console.error("Error sending email:", error);
+      } finally {
+        setSubmitting(false);
+      }
     }
   };
 
   return (
     <div className="flex w-full max-md:flex-col sec-padding bg-light_white">
       <div className="w-full max-md:order-2">
-        <h2 className="text-center font-bold text-[30px] uppercase">
-          Contact Us
-        </h2>
-
+        <h2 className="text-center font-bold text-[30px] uppercase">Contact Us</h2>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 p-5 max-md:p-0">
             <div className="mb-5 max-md:mb-1">
-              <label className="text-white"></label>
               <input
                 id="fName"
                 type="text"
@@ -93,13 +100,10 @@ const ContactForm = () => {
                 value={formData.username}
                 onChange={handleChange}
               />
-              {errors.username && (
-                <p className="text-error_clr">{errors.username}</p>
-              )}
+              {errors.username && <p className="text-error_clr">{errors.username}</p>}
             </div>
 
             <div className="mb-5 max-md:mb-1">
-              <label className="text-white"></label>
               <input
                 id="yEmail"
                 type="email"
@@ -114,7 +118,6 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-5 max-md:mb-1">
-              <label className="text-white"></label>
               <input
                 id="phNumber"
                 type="text"
@@ -126,66 +129,42 @@ const ContactForm = () => {
                 onChange={handleChange}
               />
               {errors.phone && <p className="text-error_clr">{errors.phone}</p>}
-            </div> 
-            {/* select option */}
+            </div>
+
             <div className="my-5">
               <select
                 id="select"
-                name="selectedOption"
-                value={formData.selectedOption}
+                name="service"
+                value={formData.service}
                 onChange={handleChange}
                 style={{
                   border: "1px solid #e5e7eb",
                   borderRadius: "0.50rem",
                   width: "100%",
-                  padding: "9px 0px",
+                  padding: "9px 2.5rem",
                 }}
               >
                 <option value="">Select Service*</option>
-                <option value="2 Post Hydraulic System">
-                  2 Post Hydraulic System
-                </option>
-                <option value="4 Post Hydraulic System">
-                  4 Post Hydraulic System
-                </option>
+                <option value="2 Post Hydraulic System">2 Post Hydraulic System</option>
+                <option value="4 Post Hydraulic System">4 Post Hydraulic System</option>
                 <option value="Puzzle Parking">Puzzle Parking</option>
-                <option value="Shuttle Stacker Parking">
-                  Shuttle Stacked Parking
-                </option>
+                <option value="Shuttle Stacker Parking">Shuttle Stacked Parking</option>
                 <option value="Tower Parking">Tower Parking</option>
-                <option value="Multilevel Stacked Rotary Parking">
-                  Multilevel Stacked Rotary Parking
-                </option>
+                <option value="Multilevel Stacked Rotary Parking">Multilevel Stacked Rotary Parking</option>
                 <option value="Bike Parking">Bike Parking</option>
-                <option value="Automated Storage And Retrieval System">
-                  Automated Storage And Retrieval System
-                </option>
+                <option value="Automated Storage And Retrieval System">Automated Storage And Retrieval System</option>
                 <option value="Elevated Car Lift">Car Lift</option>
               </select>
-              {errors.phone && <p className="text-error_clr">{errors.selectedOption}</p>}
-            </div>
-
-            <div className="mb-5 max-md:mt-[-10px]">
-              <label className="text-white"></label>
-              <textarea
-                name="msg"
-                className="w-full rounded-lg p-2 mt-2 max-md:mt-5 outline-none px-10 min-h-[50px]"
-                placeholder="Message"
-                cols={20}
-                rows={2}
-                autoComplete="off"
-                value={formData.msg}
-                onChange={handleChange}
-              ></textarea>
-              {errors.msg && <p className="text-error_clr">{errors.msg}</p>}
+              {errors.service && <p className="text-error_clr">{errors.service}</p>}
             </div>
 
             <div className="text-center block">
               <button
                 type="submit"
                 className="btn bg-primary text-white rounded-full max-md:rounded-lg w-1/4 p-2"
+                disabled={submitting}
               >
-                Submit
+                {submitting ? "Sending..." : "Send Now"}
               </button>
             </div>
           </div>

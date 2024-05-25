@@ -31,7 +31,7 @@ export default {
         imgShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"
       },
       backgroundImage: {
-        'about_bg' : "linear-gradient(rgba(255, 255, 255,.8), rgba(255, 255, 255,.8)), url('/about_bg.jpg')"
+        'about_bg' : "linear-gradient(rgba(255, 255, 255,0.1), rgba(255, 255, 255,0.1)), url('/Aboutus/Aboutus-banner.jpg')"
       }
     },
   },

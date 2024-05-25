@@ -35,7 +35,7 @@ const Aboutsec = () => {
       <div className="w-2/4 rounded-lg max-lg:w-full ">
         <div className="w-full h-[505px] max-lg:w-full max-lg:h-[350px] overflow-hidden rounded-lg">
           <LazyLoadImage
-            src="/about_bg.jpg"
+            src="Aboutus/About-Image.jpg"
             alt="about"
             className="w-full h-full aspect-square rounded-lg hover:scale-110 duration-300"
           />
