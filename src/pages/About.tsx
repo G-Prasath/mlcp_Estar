@@ -9,7 +9,7 @@ const About = () => {
     <>
       <Aboutbanner/>
       <Aboutsec/>
-      <Ourteam/>
+      {/* <Ourteam/> */}
       <Officeimg/>
     </>
   )

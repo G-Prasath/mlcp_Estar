@@ -82,6 +82,12 @@ const Navbar = () => {
               </li>
 
               <li>
+                <Link to="/videos" className={`nav__link ${isActive === "gallery" ? "text-primary": ""}`} onClick={() => setIsActive("videos")}>
+                  Videos
+                </Link>
+              </li>
+
+              <li>
                 <Link to="/contact" className={`nav__link ${isActive === "contact" ? "text-primary": ""}`} onClick={() => setIsActive("contact")}>
                   Contact us
                 </Link>
