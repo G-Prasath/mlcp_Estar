@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isActive, setIsActive] = useState("home")
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -44,16 +43,16 @@ const Navbar = () => {
           >
             <ul className="nav__list uppercase text-sm">
               <li className="max-lg:border-b border-gray">
-                <Link to="/" className={`nav__link ${isActive === "home" ? "text-primary": ""}`} onClick={() => setIsActive("home")}>
+                <Link to="/" className={`nav__link`}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className={`nav__link ${isActive === "about" ? "text-primary": ""}`} onClick={() => setIsActive("about")}>
+                <Link to="/about" className={`nav__link`}>
                   About
                 </Link>
               </li>
-              <li className="dropdown__item focus:text-white">
+              <li className="dropdown__item">
                 <div className={`nav__link`} onClick={toggleSubMenu}>
                     Products
                   <RiArrowDownSLine
@@ -76,19 +75,19 @@ const Navbar = () => {
               </li>
 
               <li>
-                <Link to="/gallery" className={`nav__link ${isActive === "gallery" ? "text-primary": ""}`} onClick={() => setIsActive("gallery")}>
+                <Link to="/gallery" className={`nav__link`}>
                   Our Gallery
                 </Link>
               </li>
 
               <li>
-                <Link to="/videos" className={`nav__link ${isActive === "gallery" ? "text-primary": ""}`} onClick={() => setIsActive("videos")}>
+                <Link to="/videos" className={`nav__link`}>
                   Videos
                 </Link>
               </li>
 
               <li>
-                <Link to="/contact" className={`nav__link ${isActive === "contact" ? "text-primary": ""}`} onClick={() => setIsActive("contact")}>
+                <Link to="/contact" className={`nav__link`}>
                   Contact us
                 </Link>
               </li>

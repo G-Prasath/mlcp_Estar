@@ -45,7 +45,7 @@ const Blogs = () => {
           </div>
           <div className="w-full aspect-square rounded-md relative overflow-hidden">
             <LazyLoadImage
-              src="/img3.jpg"
+              src="/img4.jpg"
               alt="Blog"
               className="w-full h-full rounded-md hover:scale-[1.1] transition ease-in-out duration-500"
             />
@@ -63,7 +63,7 @@ const Blogs = () => {
           </div>
           <div className="w-full aspect-square rounded-md relative overflow-hidden">
             <LazyLoadImage
-              src="/img2.jpg"
+              src="/img4.jpg"
               alt="Blog"
               className="w-full h-full rounded-md hover:scale-[1.1] transition ease-in-out duration-500"
             />
@@ -81,7 +81,7 @@ const Blogs = () => {
           </div>
           <div className="w-full aspect-square rounded-md relative overflow-hidden">
             <LazyLoadImage
-              src="/img1.jpg"
+              src="/img4.jpg"
               alt="Blog"
               className="w-full h-full rounded-md hover:scale-[1.1] transition ease-in-out duration-500"
             />

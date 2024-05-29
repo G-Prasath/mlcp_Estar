@@ -3,7 +3,7 @@ import React from "react";
 const Videobanner = () => {
   return (
     <div className="w-full aspect-video">
-      <img src="/video.jpg" alt="Banner" className="w-full h-full" />
+      <img src="/videos/video_banner.jpg" alt="Banner" className="w-full h-full" />
     </div>
   );
 };

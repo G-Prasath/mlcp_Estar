@@ -16,6 +16,14 @@ const Videogrid = () => {
       videoSrc: "thirupur.mp4",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus.",
     },
+     {
+      videoSrc: "thirupur_colmpleted.mp4",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus.",
+    },
+    {
+      videoSrc: "Chomept.mp4",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus.",
+    },
   ];
 
   return (
