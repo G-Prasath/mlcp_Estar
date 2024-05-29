@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
 import Banner from "../components/Service/Banner";
 import Cards from "../components/Service/Cards";
 import { TowerData } from "../data/ServiceData";
+import { Helmet } from "react-helmet-async";
+import { TowerparkingPageData as metaTags } from "../data/Metatags";
 
 const Towerparking = () => {
   return (
     <div>
-            {TowerData.map((item, index) => (
+      <Helmet>
+        <title>{metaTags.title}</title>
+        <meta name="description" content={metaTags.description} />
+        <meta name="keywords" content={metaTags.keywords} />
+      </Helmet>
+      {TowerData.map((item, index) => (
         <div key={index}>
           <Banner
             imgSrc={item.banner}
@@ -18,7 +25,7 @@ const Towerparking = () => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Towerparking
+export default Towerparking;

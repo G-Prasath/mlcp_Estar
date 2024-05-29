@@ -1,60 +1,56 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import Clients from "./components/Clients";
 import NotFound from "./pages/NotFound";
 
-const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Gallery = lazy(() => import("./pages/Gallery"));
-const Videos = lazy(() => import("./pages/videos"));
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
+import Videogallery from "./pages/Videogallery";
 
-
-const Twopost = lazy(() => import("./pages/TwoPost"));
-const Fourpost = lazy(() => import("./pages/Fourpost"));
-const Puzzleparking = lazy(() => import("./pages/Puzzleparking"));
-const Shuttelstack = lazy(() => import("./pages/Shuttleparking"))
-const Towerparking = lazy(() => import("./pages/Towerparking"))
-const MSRP = lazy(() => import("./pages/Multilavelstackparking"))
-const Bikeparking = lazy(() => import("./pages/Bikeparking"));
-const ASRS = lazy(() => import("./pages/ASRS"));
-const Carelvator = lazy(() => import("./pages/Carelevator"))
-
-
-
+import Twopost from "./pages/TwoPost";
+import Fourpost from "./pages/Fourpost";
+import Puzzleparking from "./pages/Puzzleparking";
+import Shuttleparking from "./pages/Shuttleparking";
+import Towerparking from "./pages/Towerparking";
+import Multilavelstackparking from "./pages/Multilavelstackparking";
+import Bikeparking from "./pages/Bikeparking";
+import ASRS from "./pages/ASRS";
+import Carelevator from "./pages/Carelevator";
 
 function App() {
   return (
-    <Router>
-      <Suspense fallback={<div/>}>
+    <HelmetProvider>
+      <Router>
         <Navbar />
-
-        <Routes>
-          <Route path="/" index element={<Home />} />
-          <Route path="/about" element={<About />} />
-
-          <Route path="/twopost" element={<Twopost />} />
-          <Route path="/fourpost" element={<Fourpost />} />
-          <Route path="/puzzleparking" element={<Puzzleparking />} />
-          <Route path="/shuttlestacker" element={<Shuttelstack />} />
-          <Route path="/towerparking" element={<Towerparking />} />
-          <Route path="/stackparking" element={<MSRP />} />
-          <Route path="/bikeparking" element={<Bikeparking />} />
-          <Route path="/asrs" element={<ASRS />} />
-          <Route path="/carelevator" element={<Carelvator />} />
-
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/videos" element={<Videos />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/*" element={<NotFound />} /> {/* 404 Route */}
-        </Routes>
-        <Clients/>
+        <React.Suspense fallback={<div/>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/twopost" element={<Twopost />} />
+            <Route path="/fourpost" element={<Fourpost />} />
+            <Route path="/puzzleparking" element={<Puzzleparking />} />
+            <Route path="/shuttlestacker" element={<Shuttleparking />} />
+            <Route path="/towerparking" element={<Towerparking />} />
+            <Route path="/stackparking" element={<Multilavelstackparking />} />
+            <Route path="/bikeparking" element={<Bikeparking />} />
+            <Route path="/asrs" element={<ASRS />} />
+            <Route path="/carelevator" element={<Carelevator />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/videos" element={<Videogallery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </React.Suspense>
+        <Clients />
         <Footer />
-      </Suspense>
-    </Router>
+      </Router>
+    </HelmetProvider>
   );
 }
 

@@ -14,7 +14,7 @@ const About = () => {
         <LazyLoadImage
           src="/home/About-Us.jpg"
           alt="About-page"
-          className="transition-all duration-300 ease-in-out hover:scale-[1.1]"
+          className="transition-all duration-300 ease-in-out hover:scale-[1.1] w-full h-full"
         />
       </div>
       <div

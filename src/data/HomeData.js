@@ -1,4 +1,13 @@
 export const Navlinks = [
+    {
+    name: "Shuttle Stacker Parking",
+    link: "shuttlestacker",
+  },
+    {
+    name: "Tower Parking",
+    link: "towerparking",
+  },
+
   {
     name: "2 Post 1+1 Hydraulic System",
     link: "twopost",
@@ -7,19 +16,15 @@ export const Navlinks = [
     name: "4 Post 1+1 Hydraulic System",
     link: "fourpost",
   },
-  {
+    {
     name: "Puzzle Parking",
     link: "puzzleparking",
   },
-  {
-    name: "Shuttle Stacker Parking",
-    link: "shuttlestacker",
+    {
+    name: "ASRS ",
+    link: "asrs",
   },
-  {
-    name: "Tower Parking",
-    link: "towerparking",
-  },
-  {
+    {
     name: "Multilevel Stacked Rotary Parking",
     link: "stackparking",
   },
@@ -27,10 +32,7 @@ export const Navlinks = [
     name: "Bike Parking",
     link: "bikeparking",
   },
-  {
-    name: "ASRS ",
-    link: "asrs",
-  },
+
   {
     name: "Car Elevator",
     link: "carelevator",

@@ -172,7 +172,7 @@ const ContactForm = () => {
       </div>
       <div className="w-full max-md:mb-10">
         <LazyLoadImage
-          className="rounded-3xl max-lg:mt-20"
+          className="rounded-3xl max-lg:mt-20 w-full h-full"
           src="/home/contact.jpg"
           alt="Contact"
           effect="blur"

@@ -30,24 +30,24 @@ const Projects = () => {
         <Splide options={options} aria-label="My Favorite Images">
           
           <SplideSlide className="relative">
-            <LazyLoadImage src="/home/Chromepet.jpg" alt="Image 1" className="aspect-square"  />
+            <LazyLoadImage src="/home/Chromepet.jpg" alt="Image 1" className="aspect-square w-full h-full"  />
           </SplideSlide>
           <SplideSlide className="relative">
-            <LazyLoadImage src="/home/Thirupur.jpg" alt="Image 2" className="aspect-square"  />
+            <LazyLoadImage src="/home/Thirupur.jpg" alt="Image 2" className="aspect-square w-full h-full"  />
           </SplideSlide>
           <SplideSlide className="relative">
-            <LazyLoadImage src="/home/Velachery.jpg" alt="Image 3" className="aspect-square"  />
+            <LazyLoadImage src="/home/Velachery.jpg" alt="Image 3" className="aspect-square w-full h-full"  />
           </SplideSlide>
 
 
           <SplideSlide className="relative">
-            <img src="/home/TRIL.jpg" alt="Image 1" className="aspect-square"  />
+            <img src="/home/TRIL.jpg" alt="Image 1" className="aspect-square w-full h-full"  />
           </SplideSlide>
           <SplideSlide className="relative">
-            <img src="/home/Kumbakonam.jpg" alt="Image 2" className="aspect-square"  />
+            <img src="/home/Kumbakonam.jpg" alt="Image 2" className="aspect-square w-full h-full"  />
           </SplideSlide>
           <SplideSlide className="relative">
-            <img src="/home/1+1-kasi-theatre.jpg" alt="Image 3" className="aspect-square"  />
+            <img src="/home/1+1-kasi-theatre.jpg" alt="Image 3" className="aspect-square w-full h-full"  />
           </SplideSlide>
         </Splide>
       </div>

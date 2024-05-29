@@ -2,10 +2,17 @@ import React from "react";
 import Banner from "../components/Service/Banner";
 import Cards from "../components/Service/Cards";
 import { CarData } from "../data/ServiceData";
+import { Helmet } from "react-helmet-async";
+import { AboutPageData as metaTags } from "../data/Metatags";
 
 const Carelevator = () => {
   return (
     <div>
+      <Helmet>
+        <title>{metaTags.title}</title>
+        <meta name="description" content={metaTags.description} />
+        <meta name="keywords" content={metaTags.keywords} />
+      </Helmet>
       {CarData.map((item, index) => (
         <div key={index}>
           <Banner

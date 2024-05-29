@@ -2,24 +2,20 @@ import React from "react";
 import ReactPlayer from "react-player";
 
 const Videogrid = () => {
+
   const vidList = [
     {
-      "videoSrc" : "Estar-Products",
-      "para": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus."
+      videoSrc: "hundai.mp4",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus.",
     },
     {
-      "videoSrc" : "estarcorporate",
-      "para": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus."
+      videoSrc: "jrt.mp4",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus.",
     },
-        {
-      "videoSrc" : "TCS-Chromepet",
-      "para": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus."
+    {
+      videoSrc: "thirupur.mp4",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus.",
     },
-        {
-      "videoSrc" : "tcs-thiruppur",
-      "para": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque soluta exercitationem voluptatibus."
-    },
-
   ];
 
   return (
@@ -28,7 +24,7 @@ const Videogrid = () => {
         <div className="w-full aspect-video" key={index}>
           <ReactPlayer
             controls={true}
-            url={`/videos/${item.videoSrc}.mp4`}
+            url={`/videos/${item.videoSrc}`}
             width="full"
             height="auto"
           />

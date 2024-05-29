@@ -2,10 +2,17 @@ import React from "react";
 import Banner from "../components/Service/Banner";
 import Cards from "../components/Service/Cards";
 import { MultilevelData } from "../data/ServiceData";
+import { Helmet } from "react-helmet-async";
+import { MultilevelstackedparkingPageData as metaTags } from "../data/Metatags";
 
 const Multilavelstackparking = () => {
   return (
     <div>
+      <Helmet>
+        <title>{metaTags.title}</title>
+        <meta name="description" content={metaTags.description} />
+        <meta name="keywords" content={metaTags.keywords} />
+      </Helmet>
       {MultilevelData.map((item, index) => (
         <div key={index}>
           <Banner

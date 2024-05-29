@@ -16,7 +16,7 @@ export const TwopostData = [
       },
     },
     card_2: {
-      img: "Product-Page/2-PostParking-2.jpg",
+      img: "Product-Page/2-PostParking-2.jpeg",
       title: "benefits",
       para: {
         "Increased Parking Capacity": "Expands parking availability without requiring extra space.",
@@ -202,7 +202,7 @@ export const ShuttleData = [
       },
     },
     card_3: {
-      img: "Product-Page/shuttlestacker-3.jpg",
+      img: "Product-Page/shuttlestacker-3.png",
       title: "Technical Specification",
       para: {
         "Maximum Lifting Capacity":

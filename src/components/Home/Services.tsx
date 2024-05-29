@@ -56,7 +56,7 @@ const Services = () => {
                     <LazyLoadImage
                       src={item.img}
                       alt="service_img"
-                      className="transistion hover:scale-[1.1] duration-500 animate-[pulse_.8s_ease-in-out] rounded-md"
+                      className="transistion hover:scale-[1.1] duration-500 animate-[pulse_.8s_ease-in-out] rounded-md w-full h-full"
                     />
                   </div>
                   <div className="service-right_img mt-5 text-white">

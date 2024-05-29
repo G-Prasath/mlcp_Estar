@@ -2,10 +2,18 @@ import React from "react";
 import Banner from "../components/Service/Banner";
 import Cards from "../components/Service/Cards";
 import { ShuttleData } from "../data/ServiceData";
+import { Helmet } from "react-helmet-async";
+import { ShuttlestackerPageData as metaTags } from "../data/Metatags";
 
 const Shuttleparking = () => {
   return (
     <div>
+      <Helmet>
+        <title>{metaTags.title}</title>
+        <meta name="description" content={metaTags.description} />
+        <meta name="keywords" content={metaTags.keywords} />
+      </Helmet>
+      
       {ShuttleData.map((item, index) => (
         <div key={index}>
           <Banner

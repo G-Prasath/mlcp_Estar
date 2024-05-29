@@ -31,7 +31,7 @@ const Aboutbanner = () => {
             </div>
             <div className="w-2/4 max-md:w-full max-lg:w-full">
               <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden">
-                <ReactPlayer playing={true} loop={true} controls={true} url='/1.mp4' height={500} />
+                <ReactPlayer playing={true} loop={true} controls={true} url='/amristar.mp4' height={500} />
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Aboutbanner = () => {
           <div className="w-full flex items-center gap-x-[45px] justify-between max-lg:flex-col max-lg:my-[50px]">
             <div className="w-2/4 max-md:w-full max-lg:w-full max-lg:order-2">
               <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden">
-                 <ReactPlayer playing={true} loop={true} controls={true} url='/2.mp4' height={500} />
+                 <ReactPlayer playing={true} loop={true} controls={true} url='/tcs_parking.mp4' height={500} />
               </div>
             </div>
 
