@@ -44,6 +44,7 @@ export const HomeService = [
     name: "2 Post Hydraulic System",
     link: "/TwoPost",
     img: "/home/2_Post_Hydraulic_System.jpg",
+    broucher: "/broucher/1+1_carparking_system.pdf",
     content:
       "The 1+1 2 Post Stacker system is designed specifically for residential applications, particularly suited for individuals and apartment complexes. It enables owners with two vehicles to optimize parking space by accommodating two cars within the footprint typically required for one car. This system employs automated stacking technology, efficiently utilizing vertical space while ensuring convenient access to both vehicles.",
   },
@@ -58,6 +59,7 @@ export const HomeService = [
     name: "Puzzle Parking",
     link: "/Puzzleparking",
     img: "/home/Puzzle_Parking.jpg",
+    broucher: "/broucher/puzzle_carparking.pdf",
     content:
       "Puzzle Car Parking systems are exclusively crafted for outdoor parking. Here automatic parking is employed from the ground level to higher level floors for car variants ranging from SUV to Hatch. These systems are categorized according to matrices, ensuring efficient space utilization with convenience and automation. By combining manual and automatic parking methods, Puzzle Car Parking systems offer a versatile solution for optimizing parking space in outdoor environments.",
   },
@@ -72,6 +74,7 @@ export const HomeService = [
     name: "Tower Parking",
     link: "/Towerparking",
     img: "/home/Tower_Parking.jpg",
+    broucher: "/broucher/tower_carparking_system.pdf",
     content:
       "Tower parking, also termed automated parking, maximizes space efficiency and convenience. Vehicles are automatically parked and retrieved by robotic platforms, eliminating traditional ramps and driving lanes. These systems feature vertical towers with multiple parking levels, ideal for urban areas with limited space. Tower parking provides efficient and secure parking solutions, making it a modern and practical choice for urban environments.",
   },

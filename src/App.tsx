@@ -22,6 +22,7 @@ import Multilavelstackparking from "./pages/Multilavelstackparking";
 import Bikeparking from "./pages/Bikeparking";
 import ASRS from "./pages/ASRS";
 import Carelevator from "./pages/Carelevator";
+import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           </Routes>
         </React.Suspense>
         <Clients />
+        <BackToTopButton />
         <Footer />
       </Router>
     </HelmetProvider>

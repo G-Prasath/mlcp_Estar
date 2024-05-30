@@ -4,7 +4,6 @@ export const TwopostData = [
     banner: "banner/2PostBanner.jpg",
     cnt1: `Our two-post hydraulic car par king system is ideal for residential and commercial areas, it optimizes vertical space usage. This innovative solution maximizes parking efficiency, particularly in urban areas with limited space. The system features two robust posts supporting a platform that hydraulically lifts and lowers, allowing two vehicles to park in the space of one. The compact design leverages the height of your parking area, effectively doubling your parking capacity without the need for extensive construction. The compact design doubles parking capacity without extensive construction. The hydraulic operation is smooth and reliable, with safety features like locks and emergency stop buttons. This practical, user-friendly solution enhances parking efficiency and property value.`,
     cnt2: `The hydraulic operation ensures smooth and reliable lifting and lowering of the platform, supported by safety features like locks and emergency stop buttons for secure usage. By utilizing this system, you benefit from increased parking efficiency, cost savings compared to building additional structures, and enhanced property value. It's a practical, user-friendly solution designed to meet modern parking challenges. Let's explore the detailed workings and the numerous benefits this system offers.`,
-
     card_1: {
       img: "Product-Page/2-PostParking-1.jpg",
       title: "key Features",
@@ -104,7 +103,7 @@ export const PuzzleData = [
     banner: "banner/Puzzle-Banner.jpg",
     cnt1: ` Thank you for your interest in our puzzle parking system, aimed at optimizing space efficiency in bustling urban areas. This innovative parking solution offers a dynamic and adaptable approach to vehicle storage, tailored to meet the demands of crowded environments. Puzzle parking systems, also known as automated parking systems, consist of multiple levels and sliding platforms that move vehicles both vertically and horizontally. This intelligent design allows cars to be parked and retrieved in a compact and efficient manner, similar to solving a puzzle. By utilizing the available space to its fullest, puzzle parking systems can significantly increase the number of parking spots within a given area.`,
     cnt2: `The hydraulic operation ensures smooth and reliable lifting and lowering of the platform, supported by safety features like locks and emergency stop buttons for secure usage. By utilizing this system, you benefit from increased parking efficiency, cost savings compared to building additional structures, and enhanced property value. It's a practical, user-friendly solution designed to meet modern parking challenges. Let's explore the detailed workings and the numerous benefits this system offers.`,
-
+    
     card_1: {
       img: "Product-Page/Puzzle-1.jpg",
       title: "Key Features",
@@ -225,6 +224,7 @@ export const TowerData = [
     cnt1: `Introducing our Tower Parking solution, an innovative answer to urban parking challenges. Engineered to optimize space utilization in dense city environments, Tower Parking offers a advanced approach to vehicle storage. This advanced system features a towering structure equipped with multiple levels of parking spaces, utilizing vertical space efficiently. Ideal for both residential and commercial settings, Tower Parking provides a reliable and flexible parking solution.`,
     cnt2: `With its sturdy design and advanced technology, Tower Parking ensures superior stability and load-bearing capacity, accommodating various vehicle sizes and weights. The hydraulic or electric lifting mechanism guarantees smooth and secure operation, while integrated safety features such as mechanical locks and emergency stop buttons prioritize user safety. Tower Parking not only maximizes parking capacity but also enhances property value by offering a practical, user-friendly parking solution. Join us as we delve into the detailed workings and numerous benefits of Tower Parking. Say goodbye to parking woes and hello to a smarter, more efficient parking experience.
         `,
+
 
     card_1: {
       img: "Product-Page/Tower-1.jpg",

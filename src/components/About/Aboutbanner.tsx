@@ -1,13 +1,12 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 
 const Aboutbanner = () => {
   return (
     <>
       <div className="bg-about_bg aspect-video bg-center bg-cover">
         <div className="sec-padding gap-20">
-          
           <div className="w-full flex items-center gap-x-[45px] justify-between max-lg:flex-col">
             <div className="w-2/4 max-md:w-full text-center max-lg:w-full">
               <h1 className="uppercase text-4xl font-bold mb-5 max-lg:text-3xl">
@@ -30,40 +29,49 @@ const Aboutbanner = () => {
               </p>
             </div>
             <div className="w-2/4 max-md:w-full max-lg:w-full">
-              <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden">
-                <ReactPlayer playing={true} loop={true} controls={true} url='/amristar.mp4' height={500} />
+              <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden rounded-md">
+                <ReactPlayer
+                  playing={true}
+                  loop={true}
+                  controls={true}
+                  url="/amristar.mp4"
+                  height={500}
+                />
               </div>
             </div>
           </div>
 
           <div className="w-full flex items-center gap-x-[45px] justify-between max-lg:flex-col max-lg:my-[50px]">
             <div className="w-2/4 max-md:w-full max-lg:w-full max-lg:order-2">
-              <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden">
-                 <ReactPlayer playing={true} loop={true} controls={true} url='/tcs_parking.mp4' height={500} />
+              <div className="w-full max-lg:w-full max-lg:aspect-square overflow-hidden rounded-md">
+                <ReactPlayer
+                  playing={true}
+                  loop={true}
+                  controls={true}
+                  url="/tcs_parking.mp4"
+                  height={500}
+                />
               </div>
             </div>
 
             <div className="w-2/4 max-md:w-full text-center max-lg:w-full">
               <h1 className="uppercase text-4xl font-bold mb-5 max-lg:text-3xl">
-                VGN NOTTING HILL PROJECT
+                The chennai silks PROJECT
               </h1>
               <p className="text-text_color my-5 text-justify max-md:px-2">
-                Setting sail on an innovative voyage hand in hand with VGN
-                Notting Hill, we are excited to introduce a pioneering endeavor
-                poised to revolutionize urban living: The VGN Notting Hill Smart
-                City project. Anchored at its essence is our trailblazing
-                Shuttle Stacker Parking system, intricately designed to
-                effortlessly house 280 cars within limited confines. In
-                collaboration with VGN Notting Hill, our aim is to revolutionize
-                parking infrastructure, mitigating congestion, and facilitating
-                smoother urban mobility. This innovative solution not only
-                optimizes land utilization but also fosters a traffic-free
-                environment, fostering sustainability and echoing the ethos of a
-                greener, smarter community envisioned by VGN Notting Hill. Let's
-                unite in shaping a future where convenience, efficiency, and
-                environmental stewardship harmonize, paving the way for the
-                collective prosperity of all stakeholders involved in the VGN
-                Notting Hill journey.
+                Embarking on a groundbreaking journey with The Chennai Silks, we
+                are thrilled to present a visionary project set to transform
+                urban parking: The Chennai Silks Tower. At the heart of this
+                initiative is our state-of-the-art Shuttle Stacker Parking
+                system, expertly designed to accommodate 190 cars within a
+                compact space. Partnering with The Chennai Silks, our mission is
+                to revolutionize parking infrastructure, reducing congestion and
+                enhancing urban mobility. This innovative solution maximizes
+                land use, creating a traffic-free environment that supports
+                sustainability and reflects the vision of a greener, smarter
+                community envisioned by The Chennai Silks. Join us in crafting a
+                future where convenience, efficiency, and environmental
+                stewardship.
               </p>
             </div>
           </div>

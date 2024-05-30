@@ -45,6 +45,17 @@ const FaqsItems = () => {
                 </div>
                 <div className="service-right_img mt-5">{item.content}</div>
                 <div className="service-right_btn mt-5 flex items-center justify-end">
+                  {item.broucher ? (
+                      <a
+                        href={item.broucher}
+                        target="_blank"
+                        className="text-primary font-bold border border-primary px-[15px] ml-2 py-[8px] rounded-full hover:text-primary hover:bg-white"
+                      >
+                        Prospectus
+                      </a>
+                    ) : (
+                      ""
+                    )}
                   <a
                     href={item.link}
                     className="text-primary ml-2 font-bold border border-primary px-[15px] py-[8px] rounded-full hover:text-white hover:bg-primary"

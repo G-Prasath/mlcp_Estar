@@ -4,7 +4,6 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 import FaqsItems from "./FaqsItems";
 import { HomeService } from "../../data/HomeData";
 
-
 const Services = () => {
   const [arrIndex, setArrIndex] = useState(0);
 
@@ -63,12 +62,18 @@ const Services = () => {
                     {item.content}
                   </div>
                   <div className="service-right_btn mt-5 flex items-center justify-end">
-                  <a
-                      href="/Sample.pdf" target="_blank"
-                      className="text-gray font-bold border border-prmary px-[15px] ml-2 py-[8px] rounded-full hover:text-primary hover:bg-white"
-                    >
-                      Brochure
-                    </a>
+                    {item.broucher ? (
+                      <a
+                        href={item.broucher}
+                        target="_blank"
+                        className="text-gray font-bold border border-white px-[15px] ml-2 py-[8px] rounded-full hover:text-primary hover:bg-white"
+                      >
+                        Prospectus
+                      </a>
+                    ) : (
+                      ""
+                    )}
+
                     <a
                       href={item.link}
                       className="text-gray font-bold border border-prmary px-[15px] ml-2 py-[8px] rounded-full hover:text-primary hover:bg-white"
